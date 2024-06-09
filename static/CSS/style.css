@@ -1,0 +1,53 @@
+input[type=file] {
+    width: 100%;
+    z-index: 50;
+    height: 38px;
+    cursor: pointer;
+    opacity: 0;
+    border: 1px solid #000;
+  }
+  
+  body {
+    background-color: #5c4084;
+    margin: 4rem;
+  }
+  .container {
+    padding: 4rem 5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 45rem;
+  }
+  h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    background: -webkit-linear-gradient(#fff, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  h4 {
+    color: #8b6bb3; /* lighten(#5c3d86, 30%) */
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 3.5rem 0;
+  }
+  .btn.btn-primary {
+    background-color: #5c4084;
+    border-color: #5c4084;
+    outline: none;
+  }
+  .btn.btn-primary:hover {
+    background-color: #4f3573; /* darken(#5c4084, 10%) */
+    border-color: #4f3573; /* darken(#5c4084, 10%) */
+  }
+  .btn.btn-primary:active, .btn.btn-primary:focus {
+    background-color: #6f5093; /* lighten(#5c4084, 5%) */
+    border-color: #6f5093; /* lighten(#5c4084, 5%) */
+  }
+  
