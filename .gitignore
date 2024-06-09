@@ -1,0 +1,6 @@
+.venv/
+venv/
+env/
+.env/
+*.sqlite3
+/static/upload_files/*
