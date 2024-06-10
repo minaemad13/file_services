@@ -1,19 +1,11 @@
 import os
 import random
-import sys
-from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from upload_file.serializer import FileSerializer
 from upload_file.models import UploadedFile
 import heapq
 from rest_framework import status
-from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework import status
 from collections import Counter
 
 
@@ -50,9 +42,9 @@ def upload(request):
             "id": file_serializer.data["id"],
             "filename": uploaded_file_instance.fileName(),
         }
-        return Response({"result": context}, status=200)
+        return JsonResponse({"result": context}, status=200)
     else:
-        return Response(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return JsonResponse(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(["GET"])
